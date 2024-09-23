@@ -1,0 +1,415 @@
+/* common css */
+
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+}
+
+main {
+  max-width: 900px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 15px;
+  border-radius: 5px;
+  /* background-image: linear-gradient(rgba(0, 0, 0, 0.46), rgba(0, 0, 0, 0.654)),
+    url(./images/alex-tyson-xiiX89sNvkc-unsplash.jpg);
+  background-size: cover; */
+  background: rgba(47, 172, 239, 0.459);
+}
+
+/* first section css */
+.task_title {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 50px;
+  font-weight: 700;
+  color: black;
+}
+
+h3 {
+  font-size: 30px;
+  font-weight: 400;
+  color: rgb(18, 4, 4);
+  margin-left: 8px;
+}
+.separator {
+  height: 2px;
+  width: 90%;
+  margin: 5px auto;
+  background-color: #0e0101;
+}
+#user_form {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+.user_1 .user_name label {
+  font-size: 24px;
+  font-weight: 500;
+  color: rgb(10, 6, 2);
+}
+.user_1 .user_name input {
+  height: 30px;
+  width: 200px;
+  padding: 10px;
+  border: none;
+  outline: none;
+  border-radius: 2px;
+  color: #0e0101;
+  background-color: aliceblue;
+  margin-top: 5px;
+  cursor: pointer;
+}
+
+.user_1 .date label {
+  font-size: 24px;
+  font-weight: 500;
+  color: rgb(10, 6, 2);
+}
+.user_1 .date input {
+  height: 30px;
+  width: 172px;
+  padding: 10px;
+  border: none;
+  outline: none;
+  border-radius: 2px;
+  color: #0e0101;
+  background-color: aliceblue;
+  margin-top: 5px;
+  cursor: pointer;
+}
+
+.user_1 .gender label {
+  font-size: 24px;
+  font-weight: 500;
+  color: rgb(10, 6, 2);
+}
+
+.user_1 .gender select {
+  height: 30px;
+  width: 172px;
+  border: none;
+  outline: none;
+  border-radius: 2px;
+  color: #0e0101;
+  background-color: aliceblue;
+  margin-top: 5px;
+  cursor: pointer;
+}
+
+.user_1 .address label {
+  font-size: 24px;
+  font-weight: 400;
+  color: rgb(10, 6, 2);
+}
+
+.user_1 .address input {
+  height: 30px;
+  width: 172px;
+  padding: 10px;
+  border: none;
+  outline: none;
+  border-radius: 2px;
+  color: #0e0101;
+  background-color: aliceblue;
+  margin-top: 5px;
+  cursor: pointer;
+}
+
+.user_2 .religion label {
+  font-size: 24px;
+  font-weight: 400;
+  color: rgb(10, 6, 2);
+}
+
+.user_2 .religion select {
+  height: 30px;
+  width: 172px;
+  border: none;
+  outline: none;
+  border-radius: 2px;
+  color: #0e0101;
+  background-color: aliceblue;
+  margin-top: 5px;
+  cursor: pointer;
+}
+
+.user_2 .relationship label {
+  font-size: 24px;
+  font-weight: 400;
+  color: rgb(10, 6, 2);
+}
+
+.user_2 .relationship select {
+  height: 30px;
+  width: 172px;
+  border: none;
+  outline: none;
+  border-radius: 2px;
+  color: #0e0101;
+  background-color: aliceblue;
+  margin-top: 5px;
+  cursor: pointer;
+}
+
+.user_2 .email label {
+  font-size: 24px;
+  font-weight: 400;
+  color: rgb(10, 6, 2);
+}
+
+.user_2 .email input {
+  height: 30px;
+  width: 200px;
+  padding: 10px;
+  border: none;
+  outline: none;
+  border-radius: 2px;
+  color: #0e0101;
+  background-color: aliceblue;
+  margin-top: 5px;
+  cursor: pointer;
+}
+
+.user_2 .phone label {
+  font-size: 24px;
+  font-weight: 400;
+  color: rgb(10, 6, 2);
+}
+
+.user_2 .phone input {
+  height: 30px;
+  width: 140px;
+  border: none;
+  outline: none;
+  border-radius: 2px;
+  color: #0e0101;
+  background-color: aliceblue;
+  margin-top: 5px;
+  cursor: pointer;
+}
+
+.user_2 .submit {
+  display: flex;
+  align-items: center;
+  justify-content: end;
+  margin-top: 5px;
+}
+.user_2 .submit input {
+  height: 20px;
+  width: 50px;
+  border: none;
+  outline: none;
+  border-radius: 3px;
+  cursor: pointer;
+  color: whitesmoke;
+  background-color: green;
+}
+
+/* first section css end here */
+
+/* second section css start */
+.tools {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+  margin-top: 10px;
+}
+
+.user_search label {
+  font-size: 24px;
+  font-weight: 400;
+  color: rgb(10, 6, 2);
+}
+.user_search input {
+  height: 30px;
+  width: 200px;
+  padding: 10px;
+  border: none;
+  outline: none;
+  border-radius: 2px;
+  color: #0e0101;
+  background-color: aliceblue;
+  margin-top: 5px;
+  cursor: pointer;
+}
+
+.filter label {
+  font-size: 24px;
+  font-weight: 400;
+  color: rgb(10, 6, 2);
+}
+.filter select {
+  height: 30px;
+  width: 100px;
+  padding: 2px;
+  border: none;
+  outline: none;
+  border-radius: 2px;
+  color: #0e0101;
+  background-color: aliceblue;
+  margin-top: 5px;
+  cursor: pointer;
+}
+.sort label {
+  font-size: 24px;
+  font-weight: 400;
+  color: rgb(10, 6, 2);
+}
+
+.sort select {
+  height: 30px;
+  width: 100px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  color: #0e0101;
+  background-color: aliceblue;
+  border-radius: 2px;
+}
+.by_date label {
+  font-size: 24px;
+  font-weight: 400;
+  color: rgb(10, 6, 2);
+}
+
+.by_date input {
+  height: 30px;
+  width: 120px;
+  padding: 10px;
+  border: none;
+  outline: none;
+  border-radius: 2px;
+  color: #0e0101;
+  background-color: aliceblue;
+  cursor: pointer;
+}
+/* second section css end here */
+
+#edit_form {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  margin-top: 5px;
+}
+
+/* third section css start */
+#bulk_action {
+  height: 42px;
+  width: 92%;
+  background-color: rgba(57, 183, 202, 0.614);
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding: 10px;
+  margin: 0 auto;
+  margin-top: 5px;
+  border-radius: 3px;
+  margin-top: 15px;
+}
+#delete_btn {
+  outline: none;
+  border: none;
+  color: rgb(15, 1, 1);
+  border-radius: 2px;
+  background: none;
+}
+
+#edit_btn {
+  outline: none;
+  border: none;
+  color: black;
+  border-radius: 5px;
+  background: none;
+}
+
+#dismiss {
+  outline: none;
+  border: none;
+  color: black;
+  border-radius: 8px;
+  background: none;
+}
+
+button i {
+  font-size: 20px;
+  /* margin: 0 px 10px; */
+  color: #664954;
+  pointer-events: none;
+}
+
+table {
+  margin-top: 20px;
+  width: 100%;
+  padding: 10px;
+}
+
+thead {
+  background: rgb(113, 221, 104);
+}
+
+#tbody tr {
+  color: rgb(20, 4, 1);
+}
+
+#tbody tr:hover {
+  background-color: rgb(34, 141, 130);
+  color: whitesmoke;
+}
+
+#tbody button {
+  border: none;
+  outline: none;
+  background: unset;
+}
+
+.table_container {
+  width: 100%;
+  overflow-x: scroll;
+}
+.table_container::-webkit-scrollbar {
+  height: 8px; /* width of the entire scrollbar */
+}
+
+.table_container::-webkit-scrollbar-track {
+  background: orange; /* color of the tracking area */
+}
+
+.table_container::-webkit-scrollbar-thumb {
+  background-color: blue; /* color of the scroll thumb */
+  border-radius: 20px; /* roundness of the scroll thumb */
+  border: 3px solid orange; /* creates padding around scroll thumb */
+}
+
+td,
+td {
+  white-space: nowrap;
+  padding: 6px 6px;
+  font-style: normal;
+}
+.action button {
+  padding: 4px;
+  background-color: tomato;
+  color: whitesmoke;
+  cursor: pointer;
+  font-size: 20px;
+}
+
+#bulk_action,
+#edit_section {
+  display: none;
+}
+
+#noBio {
+  text-align: center;
+  font-size: 24px;
+}

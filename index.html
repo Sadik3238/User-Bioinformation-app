@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Management App</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <link rel="stylesheet" href="/style.css">
+    <script defer src="/app.js"></script>
+</head>
+
+<body>
+    <main>
+        <!-- first section start -->
+        <h1 class="task_title">User Management App</h1>
+        <h3>New User Information</h3>
+        <div class="separator"></div>
+        <form id="user_form">
+
+            <!-- first name -->
+            <div class="user_1">
+                <div class="user_name">
+                    <label for="firstName">First Name:</label>
+                    <input required type="text" id="firstName" name="firstName" placeholder="Add first name">
+                </div>
+
+                <!-- last name -->
+                <div class="user_name">
+                    <label for="lastName">Last Name:</label>
+                    <input required type="text" id="lastName" name="lastName" placeholder="Add last name">
+                </div>
+
+                <!-- date of birth -->
+                <div class="date">
+                    <label for="dob">Date Of Birth:</label>
+                    <input required type="date" id="dob" name="dob">
+                </div>
+
+                <!-- gender -->
+                <div class="gender">
+                    <label for="gender">Gender:</label>
+                    <select name="gender" id="gender" required>
+                        <option value="all">All</option>
+                        <option value="male">Male</option>
+                        <option value="female">Female</option>
+                        <option value="others">Others</option>
+                    </select>
+                </div>
+
+                <!-- address -->
+                <div class="address">
+                    <label for="address">Address:</label>
+                    <input required="text" id="address" name="address" placeholder="Input your address">
+                </div>
+            </div>
+
+            <div class="user_2">
+                <!-- religion -->
+                <div class="religion">
+                    <label for="religion">Religion:</label>
+                    <select name="religion" id="religion" required>
+                        <option value="all">All</option>
+                        <option value="islam">Islam</option>
+                        <option value="hindu">Hindu</option>
+                        <option value="christianity">Christianity</option>
+                        <option value="buddhism">Buddhism</option>
+                    </select>
+                </div>
+
+                <!-- relationship -->
+                <div class="relationship">
+                    <label for="relationship">Relationship:</label>
+                    <select name="relationship" id="relationship" required>
+                        <option value="all">All</option>
+                        <option value="single">Single</option>
+                        <option value="married">Married</option>
+                    </select>
+                </div>
+
+                <!-- email -->
+                <div class="email">
+                    <label for="email">Email:</label>
+                    <input required type="email" id="email" name="email" placeholder="Add your email">
+                </div>
+
+                <!-- phone number -->
+                <div class="phone">
+                    <label for="phone">Phone Number:</label>
+                    <input type="text" id="phone" name="phone" placeholder="+088">
+                </div>
+
+                <div class="submit">
+                    <input type="submit" value="Submit">
+                </div>
+            </div>
+
+        </form>
+
+        <!-- first section end here-->
+
+        <!-- second section start -->
+        <h3>User Find</h3>
+        <div class="separator"></div>
+        <div class="tools">
+
+            <!-- search -->
+            <div class="user_search">
+                <label for="search">Search:</label>
+                <input required type="text" id="search" name="search" placeholder="Search by name">
+            </div>
+            <!-- filter -->
+
+            <div class="filter">
+                <label for="filter">Filter:</label>
+                <select name="filter" id="filter">
+                    <option value="all">All</option>
+                    <option value="male">Male</option>
+                    <option value="female">Female</option>
+                    <option value="single">Single</option>
+                    <option value="married">Married</option>
+                    <option value="islam">Islam</option>
+                    <option value="hindu">Hindu</option>
+                    <option value="buddhism">Buddhism</option>
+                    <option value="christianity">Christianity</option>
+                </select>
+            </div>
+
+            <!-- sort -->
+            <div class="sort">
+                <label for="sort">Sort:</label>
+                <select name="sort" id="sort">
+                    <option value="all">All</option>
+                    <option value="old">Old</option>
+                    <option value="new">New</option>
+                </select>
+            </div>
+
+            <!-- by date -->
+            <div class="by_date">
+                <label for="by_date">By Date:</label>
+                <input type="date" id="by_date" name="by_date">
+            </div>
+        </div>
+        <!-- second section end here -->
+
+        <!-- third section start -->
+        <div id="bulk_action">
+            <button id="delete_btn"><i class="fa-solid fa-trash-can"></i></button>
+
+            <button id="edit_btn"><i class="fa-solid fa-pen"></i></button>
+
+            <button id="dismiss"><i class="fa-solid fa-x"></i></button>
+        </div>
+        <!-- third section end here -->
+
+        <!-- edit section start here -->
+        <div id="edit_section" class="edit_section">
+            <form id="edit_form">
+                <div class="user_1">
+
+                    <div class="user_name">
+                        <label for="edit_name">First Name:</label>
+                        <input required type="text" id="edit_name" name="firstName" placeholder="Add first name">
+                    </div>
+
+                    <!-- last name -->
+                    <div class="user_name">
+                        <label for="edit_name">Last Name:</label>
+                        <input required type="text" id="edit_name" name="lastName" placeholder="Add last name">
+                    </div>
+
+                    <!-- date of birth -->
+                    <div class="date">
+                        <label for="edit_dob">Date Of Birth:</label>
+                        <input required type="date" id="edit_dob" name="dob">
+                    </div>
+
+                    <!-- gender -->
+                    <div class="gender">
+                        <label for="edit_gender">Gender:</label>
+                        <select name="gender" id="edit_gender" required>
+                            <option value="all">All</option>
+                            <option value="male">Male</option>
+                            <option value="female">Female</option>
+                            <option value="others">Others</option>
+                        </select>
+                    </div>
+
+                    <!-- address -->
+                    <div class="address">
+                        <label for="edit_address">Address:</label>
+                        <input required="text" id="edit_address" name="address" placeholder="Input your address">
+                    </div>
+                </div>
+
+                <div class="user_2">
+                    <!-- religion -->
+                    <div class="religion">
+                        <label for="edit_religion">Religion:</label>
+                        <select name="religion" id="edit_religion" required>
+                            <option value="all">All</option>
+                            <option value="islam">Islam</option>
+                            <option value="hindu">Hindu</option>
+                            <option value="christianity">Christianity</option>
+                            <option value="buddhism">Buddhism</option>
+                        </select>
+                    </div>
+
+                    <!-- relationship -->
+                    <div class="relationship">
+                        <label for="edit_relationship">Relationship:</label>
+                        <select name="relationship" id="edit_relationship" required>
+                            <option value="all">All</option>
+                            <option value="single">Single</option>
+                            <option value="married">Married</option>
+                        </select>
+                    </div>
+
+                    <!-- email -->
+                    <div class="email">
+                        <label for="edit_email">Email:</label>
+                        <input required type="email" id="edit_email" name="email" placeholder="Add your email">
+                    </div>
+
+                    <!-- phone number -->
+                    <div class="phone">
+                        <label for="edit_phone">Phone Number:</label>
+                        <input type="text" id="edit_phone" name="phone" placeholder="+088">
+                    </div>
+
+                    <div class="submit">
+                        <input type="submit" value="Submit">
+                    </div>
+                </div>
+            </form>
+        </div>
+
+        <div class="table_container">
+            <table>
+                <thead>
+                    <tr>
+                        <th>
+                            <label style="margin-right:5px;" for="checkbox">All</label>
+                            <input style="margin-right: 5px;" type="checkbox" name="checkbox" id="allSelect">
+                        </th>
+                        <th>No.</th>
+                        <th>FName</th>
+                        <th>LName</th>
+                        <th>DOB</th>
+                        <th>Gender</th>
+                        <th>Address</th>
+                        <th>Religion</th>
+                        <th>Relationship</th>
+                        <th>Email</th>
+                        <th>Phone</th>
+                        <th>Action</th>
+                    </tr>
+                </thead>
+
+                <tbody id="tbody">
+                    <!-- <tr>
+                        <td></td>
+                        <td>01.</td>
+                        <td>Abu</td>
+                        <td>Sah</td>
+                        <td>02-07-2000</td>
+                        <td>Male</td>
+                        <td>Islam</td>
+                        <td>Single</td>
+                        <td>islam@gmail.com</td>
+                        <td>01328393464</td>
+                        <td>
+                            <button id="edit">
+                                <i class="fa-solid fa-pen"></i>
+                            </button>
+                            <button id="check">
+                                <i class="fa-solid fa-check"></i>
+                            </button>
+                            <button id="delete">
+                                <i class="fa-solid fa-trash-can"></i>
+                            </button>
+                        </td>
+                    </tr> -->
+                </tbody>
+            </table>
+            <div id="noBio">Nothing Information Here</div>
+        </div>
+    </main>
+</body>
+
+</html>
